@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,21 +7,34 @@
         <title>NewsPortal</title>
     </head>
     <body>
+        <div class="main-content">
         <header>
+            <div class="section-container">
             <h1>News Portal</h1>
+        </div>
         </header>
-        <main>
+        <main class="main">
             <div class="sources buttons"></div>
+            <div class="section-container">
             <div class="news"></div>
+        </div>
         </main>
+    </div>
         <footer>
+            <div class="section-container">
+            <div class="footer__top">
+                <p class="footer__info"><a href="https://github.com/Vs-elen">Elena Vsialikh</a></p>
+                <p class="footer__info">January 2023</p>
+                <a href="https://rs.school/js-en/" class="footer__logo"><img src="images/rs_school_js.svg" alt="RS-school logo" class="footer__icon"></a>
+            </div>            
             <p class="copyright">
                 Copyright <a href="https://newsapi.org">NewsAPI</a>
             </p>
+        </div>
         </footer>
 
         <template id="sourceItemTemp">
-            <div class="source__item">
+            <div class="source__item swiper-slide">
                 <span class="source__item-name"></span>
             </div>
         </template>
@@ -45,7 +58,5 @@
                 </div>
             </div>
         </template>
-
-        <script src="./index.js"></script>
     </body>
 </html>

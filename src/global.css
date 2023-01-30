@@ -1,11 +1,29 @@
+html,
 body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
     color: #fff;
     background: #17181c;
     font-family: sans-serif;
+display: flex;
+flex-direction: column;
+}
+
+
+
+.section-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 header {
     padding: 10px 30px;
+    text-align: center;
 }
 
 header h1 {
@@ -14,21 +32,41 @@ header h1 {
 }
 
 footer {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    background: rgb(40, 106, 150);
+    margin-top: auto;
+
 }
+.main {
+    margin-bottom: 40px;
+}
+.footer__top {
+    width: 100%;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.footer__icon {
+    width: 120px;
+}
+.footer__info,
 footer .copyright {
     font-size: 14px;
-    color: #333;
+    color: #fff;
     text-align: center;
 }
+.footer__info a,
 footer .copyright a {
-    color: #444;
+    color: #fff;
+    transition: all 0.3s ease;
 }
+.footer__info a:hover,
 footer .copyright a:hover {
-    color: #555;
+    color: #69db7e;
 }
 footer .copyright:before {
     content: '©';
