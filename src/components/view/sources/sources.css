@@ -2,18 +2,36 @@
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    height: 120px;
     overflow: auto;
     align-items: center;
     font: 300 1em 'Fira Sans', sans-serif;
 }
+
+.sources::-webkit-scrollbar {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    height: 6px;
+    background: rgb(165 165 165 / 30%);
+  }
+  .sources::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .sources {
+    scrollbar-color: #fff rgb(165 165 165 / 30%); 
+    scrollbar-width: thin;  
+  }
 
 .source__item {
     background: none;
     border: 2px solid #30c5ff;
     font: inherit;
     line-height: 1;
-    margin: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 32px;
     padding: 1em 2em;
     color: #70d6ff;
     transition: 0.25s;
@@ -32,3 +50,5 @@
     font-weight: 400;
     white-space: nowrap;
 }
+
+
